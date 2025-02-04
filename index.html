@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eliott Exe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="logo.png" alt="Eliott Exe Logo">
+                </a>
+                <ul class="nav-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <div class="background-logo">
+                <img src="logo.png" alt="Eliott Exe logo" class="logo-animate">
+            </div>
+    
+            <div class="intro-txt">
+                <h1 class="fade-in">
+                    Hi, it's <span>Eliott Exe</span>
+                </h1>
+                <h3 class="fade-in">
+                    I'm a <span class="animated-text"></span>
+                </h3>
+                <p class="fade-in">
+                    Welcome to my portfolio! I create digital experiences through web development, design, and more.
+                </p>
+                <a href="#" class="btn fade-in">View My Work</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>My Services</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and interactive websites with modern technologies.</p>
+                    <a href="web-development.html" class="btn-service">View More</a>
+                </div>
+    
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Discord Bot Dev</h3>
+                    <p>Developing powerful and feature-rich bots for Discord communities.</p>
+                    <a href="#" class="btn-service">View More</a>
+                </div>
+    
+                <div class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Roblox Dev</h3>
+                    <p>Building immersive experiences with scripting and game design on Roblox.</p>
+                    <a href="#" class="btn-service">View More</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <div class="scroll-text">Scroll down</div>
+    </div>
+
+    <script src="mobile-nav-menu.js"></script>
+    <script src="scroll-indicator.js"></script>
+</body>
+</html>
