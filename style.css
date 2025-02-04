@@ -333,7 +333,6 @@ body {
 
 /* Web development */
 #web-intro {
-    background: url('background-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -348,6 +347,12 @@ body {
 #web-intro h1 {
     font-size: 3rem;
     animation: fadeIn 2s ease-in-out forwards;
+}
+
+#web-intro p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 500;
 }
 
 .skill-card {
@@ -488,7 +493,6 @@ body {
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    transition: background 0.3s, transform 0.3s;
 }
 
 .project-card a:hover {
@@ -528,4 +532,29 @@ body {
     .project-card {
         padding: 20px;
     }
+}
+
+/* Section Discord Bot Intro */
+#discord-bot-intro {
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#discord-bot-intro h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out forwards;
+    color: #7289da; /* La couleur officielle de Discord */
+}
+
+#discord-bot-intro p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 500;
 }
