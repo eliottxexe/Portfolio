@@ -6,7 +6,7 @@
     <title>Discord Bot Development | Eliott Exe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -36,11 +36,22 @@
             </div>
         </section>
 
-        <!-- Section Skills (Compétences) -->
+        <!-- Section Skills (Compétences) avec effet déroulant -->
         <section id="skills">
             <h2>My Skills</h2>
             <div class="skills-container">
-                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-card">
+                    <div class="skill-front">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-back">
+                        <p>
+                            I make Discord bot in Python using discord.py.
+                            I make multiple commands, moderation services and more.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -49,9 +60,36 @@
             <h2>My Discord Bot Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
+                    <img src="megachevre_logo.png" alt="Méga Chèvre Bot" class="project-image">
                     <h3>Méga Chèvre Bot</h3>
-                    <p>A Discord bot that serves my community with fun commands and automated tasks.</p>
+                    <p>A Discord bot that serves my community with fun commands, automated tasks, and also a globat chat system !</p>
                     <a href="https://megachevre.work.gd/?path=Pages/BotDocumentation/documentation.html" class="btn" target="_blank">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Gallery -->
+        <section id="gallery">
+            <h2>Project Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <img src="megachevre_bot_globalchat.png" alt="Bot Global Chat">
+                    <div class="gallery-overlay">
+                        <p>
+                            It's a global chat that you can integrate in any server you want !
+                            You can discuss with many peoples who comes from nother servers.                       </p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="megachevre_bot_points.png" alt="Bot Points System">
+                    <div class="gallery-overlay">
+                        <p>
+                            You can earn points by sending messages in a server.
+                            With points, you can buy roles or acces for private channels.
+                            Also, you can bet points in many games like coinflip or russian roulette.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
