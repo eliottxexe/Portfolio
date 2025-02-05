@@ -355,24 +355,64 @@ body {
     font-weight: 500;
 }
 
-.skill-card {
-    background: #333;
-    padding: 20px;
-    border-radius: 12px;
+/* Skills Section */
+#skills {
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 60px 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Skill Cards */
+.skill-card {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: height 0.3s ease;
+}
+
+.skill-front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-front i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Description Box (hidden by default) */
+.skill-back {
+    height: 0;
     opacity: 0;
-    animation: fadeIn 1.2s ease-in-out forwards;
+    padding: 0 15px;
+    font-size: 14px;
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 
-.skill-card i {
-    font-size: 3rem;
-    color: coral;
-}
-
+/* Hover Effect - Expand card */
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(255, 127, 80, 0.3);
+    height: 140px;
+}
+
+.skill-card:hover .skill-back {
+    height: 80px;
+    opacity: 1;
+    padding-top: 10px;
 }
 
 @keyframes fadeIn {
