@@ -406,7 +406,7 @@ body {
 
 /* Hover Effect - Expand card */
 .skill-card:hover {
-    height: 150px;
+    height: auto;
 }
 
 .skill-card:hover .skill-back {
